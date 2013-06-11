@@ -9,7 +9,7 @@ License:   GPL
 Group:     Development/PHP
 URL:       http://phpwebsite.appstate.edu
 Source:    %{name}-%{version}-%{release}.tar.bz2
-Requires:  php >= 5.0.0, php-gd >= 5.0.0
+Requires:  php >= 5.0.0, php-gd >= 5.0.0, phpwebsite
 Prefix:    /var/www/phpwebsite
 BuildArch: noarch
 
