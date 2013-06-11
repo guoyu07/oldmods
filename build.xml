@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="oldmods" default="build">
+    <property environment="env" />
+
+    <target name="build" depends="prepare" />
+
+    <target name="post-rpm" />
+
+    <target name="clean" description="Cleanup build artifacts">
+        <delete dir="${basedir}/build"/>
+    </target>
+
+    <target name="prepare" depends="clean"
+         description="Prepare for build">
+        <mkdir dir="${basedir}/build/rpm"/>
+        <mkdir dir="${basedir}/build/bin"/>
+    </target>
+</project>
